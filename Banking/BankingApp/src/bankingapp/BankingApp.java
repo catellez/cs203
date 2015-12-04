@@ -23,7 +23,7 @@ public class BankingApp extends BankingSystem {
     public static void main(String[] args) {
         ArrayList<BankAccount> accounts = makeBankingSystem();
         
-        Collections.sort(accounts, BankAccount.createComparatorByBalance(true));
+        Collections.sort(accounts, BankAccount.createComparatorByBalance(false));
         for (BankAccount c: accounts){
             System.out.println(c.getName(c)+", "+c.getBalance(c));
         
